@@ -5,6 +5,7 @@ python:
   - '3.6'
 install:
 - sudo apt-get update
+- pip install --upgrade pip setuptools
 - pip install -U --process-dependency-links -e .[develop]
 - pip install --upgrade pytest
 script:
